@@ -1,27 +1,27 @@
 # Word轉PowerPoint工具 v5.0 相依套件 - 雲端部署版
 
-# 核心功能套件 (固定版本確保穩定性)
-python-docx==0.8.11        # Word文件處理
-python-pptx==0.6.22        # PowerPoint文件處理  
-Pillow==10.0.1             # 圖片處理與渲染
+# 核心功能套件 (讓 Streamlit Cloud 自動選擇相容版本)
+python-docx        # Word文件處理
+python-pptx        # PowerPoint文件處理  
+Pillow             # 圖片處理與渲染
 
 # 網頁版界面 (Streamlit) - 雲端部署優化
-streamlit==1.28.1          # 網頁應用框架
+streamlit          # 網頁應用框架
 
 # 系統相依套件
-lxml==4.9.3                # XML處理 (python-pptx 需要)
+lxml               # XML處理 (python-pptx 需要)
 
 # 可選增強套件
-numpy==1.24.3              # 數值計算 (PIL 後處理使用)
+numpy              # 數值計算 (PIL 後處理使用)
 
 # 雲端部署專用套件
-requests==2.31.0           # HTTP 請求處理
-urllib3==2.0.4             # URL 處理
+requests           # HTTP 請求處理
+urllib3            # URL 處理
 
 # 注意：以下套件僅用於本地開發，雲端部署時會被忽略
-# PySide6>=6.4.0           # Qt6 Python綁定 (桌面版專用)
+# PySide6           # Qt6 Python綁定 (桌面版專用)
 
 # 開發和測試套件 (可選，註解以減少部署大小)
-# pytest>=7.0.0           # 單元測試
-# black>=22.0.0            # 代碼格式化
-# flake8>=4.0.0            # 代碼檢查
+# pytest            # 單元測試
+# black             # 代碼格式化
+# flake8            # 代碼檢查
