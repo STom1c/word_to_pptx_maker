@@ -1,12 +1,10 @@
-# Byte-compiled / optimized / DLL files
+# Word轉PowerPoint工具 - Git 忽略檔案
+
+# Python 相關
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -20,7 +18,6 @@ parts/
 sdist/
 var/
 wheels/
-pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -28,88 +25,43 @@ share/python-wheels/
 MANIFEST
 
 # PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+# 虛擬環境
+env/
+venv/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
+# IDE 相關
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # Jupyter Notebook
 .ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
 
 # pyenv
 .python-version
 
 # pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
+Pipfile.lock
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+# PEP 582
 __pypackages__/
 
-# Celery stuff
+# Celery
 celerybeat-schedule
 celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-yield_analysis_env/
 
 # Spyder project settings
 .spyderproject
@@ -129,79 +81,67 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
+# pytype static type analyzer
+.pytype/
 
-# Icon must end with two \r
-Icon
+# Cython debug symbols
+cython_debug/
 
-# Thumbnails
-._*
+# Streamlit 相關
+.streamlit/secrets.toml
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# Windows
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-
-# Dump file
-*.stackdump
-
-# Folder config file
-[Dd]esktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# Project specific
-config.json
-.word_to_ppt_config.json
-temp_slides/
+# 應用程式暫存檔案
 *.tmp
 *.temp
+/temp/
+/tmp/
+*_預覽圖片/
+preview_images/
+slide_*.jpg
+slide_*.png
 
-# PyInstaller build output
-dist/
-build/
-
-# Virtual environment
-word_to_pptx_env/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Test files
+# 測試檔案
+test_*.docx
+test_*.pptx
 test_output/
-sample_files/
+example_*.docx
+example_*.pptx
+
+# 日誌檔案
+*.log
+logs/
+
+# 系統檔案
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+desktop.ini
+
+# 設定檔案 (保留範本)
+.word_to_pptx_config.json
+
+# 大型檔案
+*.zip
+*.rar
+*.tar.gz
+
+# 開發和測試專用
+dev/
+testing/
+experiments/
+old_versions/
+
+# 部署相關 (保留在本地)
+deployment_notes.md
+local_test_results.txt
+
+# 個人筆記
+notes.md
+todo.md
+personal_*

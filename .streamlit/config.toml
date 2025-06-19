@@ -1,0 +1,44 @@
+[global]
+# 開發模式設定
+developmentMode = false
+
+[server]
+# 伺服器設定
+port = 8501
+enableCORS = false
+enableXsrfProtection = true
+maxUploadSize = 50
+enableWebsocketCompression = true
+
+[browser]
+# 瀏覽器設定
+gatherUsageStats = false
+showErrorDetails = true
+
+[theme]
+# 主題設定
+primaryColor = "#3498db"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730"
+font = "sans serif"
+
+[client]
+# 客戶端設定
+caching = true
+displayEnabled = true
+showErrorDetails = true
+
+[runner]
+# 執行器設定
+magicEnabled = true
+installTracer = false
+fixMatplotlib = true
+postScriptGC = true
+fastReruns = true
+enforceSerializableSessionState = false
+
+[logger]
+# 日誌設定
+level = "info"
+messageFormat = "%(asctime)s %(message)s"
