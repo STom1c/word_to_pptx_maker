@@ -2,3 +2,7 @@ PySide6>=6.5.0
 python-docx>=0.8.11
 python-pptx>=0.6.21
 pillow>=9.5.0
+
+# Optional dependencies for enhanced functionality
+spire-presentation>=1.0.0  # Optional: High-quality slide image export (Windows only)
+pywin32>=227; sys_platform == "win32"  # Optional: Windows COM API for PowerPoint automation
